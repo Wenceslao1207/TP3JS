@@ -1,0 +1,14 @@
+{
+	"bandName": "Foo Fighters",
+	"title": "One by one",
+	"year": "2002",
+	"description": "One by One is the fourth studio album by American rock band Foo Fighters, released on October 22, 2002 by RCA.",
+	"tracks":[
+		{
+		"title": "All my life",
+		"author": "Dave Grohl",
+		"duration": "4:44"
+	}
+	]
+}
+
