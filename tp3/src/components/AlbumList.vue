@@ -5,7 +5,7 @@
 				Album List
 				<b-link href="#/add-album">(Add Album)</b-link>
 			</h2>
-			<b-table striped hover :intem="albums" :fields="fields">
+			<b-table striped hover :items="albums" :fields="fields">
 				<template slot="actions" scope="row">
 					<b-btn size="sm" @click.stop="details(row.item)">Details<b-btn>
 				</template>
@@ -38,7 +38,7 @@ export default {
 	},
 	created () {
 		axios.get('http://localhost:3030/album')
-			.them(response => {
+			.then(response => {
 				this.albums = response.data
 			})
 			.catch(e => {
@@ -50,7 +50,7 @@ export default {
 			this.$router.push({
 				name: "ShowAlbum",
 				params: {
-					id: book._id
+					id: album._id
 				}
 			})
 		}

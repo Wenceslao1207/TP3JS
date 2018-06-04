@@ -13,17 +13,17 @@ export default new Router({
 		  path: '/',
 		  name: 'AlbumList',
 		  component: AlbumList
-	  }
+	  },
 	  {
 		  path: '/show-album/:id',
 		  name: 'ShowAlbum',
 		  component: ShowAlbum
-	  }
+	  },
 	  {
 		  path: '/add-album',
 		  name: 'CreateAlbum',
 	          component: CreateAlbum
-	  }
+	  },
 	  {
 		  path: '/edit-album/:id',
 		  name: 'EditAlbum',
